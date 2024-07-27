@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> Responsive portfolio website Ansel </title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Lisa</a>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bxs-home'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bxs-user'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#experience" class="nav__link">
+                                <i class='bx bxs-briefcase-alt-2' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bxs-book'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#certification" class="nav__link">
+                                <i class='bx bxs-graduation'></i>
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class='bx bxs-message-square-dots'></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Lisa Verma</h1>
+                        <h3 class="home__education">Aspiring Software Engineer</h3>
+                        <div class="home__buttons">
+                            <a download="" href="assets/pdf/resume.pdf" class="button button--ghost">
+                                Resume
+                            </a>
+                            <a href="#about" class="button">About me</a>
+                        </div>
+                    </div>
+
+                    <div class="home__handle">
+                        <img src="assets/img/IMG_5721-removebg-preview.png" alt="" class="home__img">
+                    </div>
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/lisa-verma-454863215/" target="blank" class="home__social-link">
+                            <i class='bx bxl-linkedin-square'></i>
+                        </a>
+                        <a href="https://github.com/lsverma0909" target="blank" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="mailto: vermalisa348@gmail.com" target="blank" class="home__social-link">
+                            <i class='bx bxs-envelope'></i>
+                        </a>
+                    </div>
+                    <a href="#about" class="home__scroll">
+                        <i class='bx bx-mouse home__scroll-icon'></i>
+                        <span class="home__scroll-name">Scroll Down</span>
+                    </a>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">About Me</h2>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/IMG_1107 Copy.jpg" alt="" class="about__img">
+                    <div class="about__data">
+                        
+                        <p class="about__description">I am Lisa, a recent graduate from University of California Davis🐄. I am currently working as a full-time IT associate at Success Academy. 
+                            I majored in Computer Engineering and am looking to transition into the field of Machine Learning, possibly in Health Care.
+                        <br><br>I am passionate about building both hardware and software products. Throughout my journey at UC Davis, I enjoyed building products with microcontrollers, arduino, machine learning products and simulations through research professors and web apps.
+                            Apart from these, I also enjoyed creating small games such as pong and tic tac toe during my free time. I have experience with Python, C/C++, Git and More.💻 
+                        <br><br>During my free time, you will either see me playing badminton with my friends, or listening to music on my headphones. Apart from that, I'm currently on the hunt for 
+                            jobs related to Machine Learning/Data Science where I can expand my skills and build products. I'm also open to joining early stage startups to gain more hands-on experience in these fields.
+                        <br><br>Feel free to check out some of my projects and experiences and feel free to connect with my on Linkedin or other social media💬. Also feel free to message me regarding any projects if ya'll wish to collaborate on as well using the form below!👇
+                        </p>
+                        <a href="#contact" class="button">Contact Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== SERVICES ===============-->
+            <section class="services section" id="experience">
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">My Experiences</h2>
+                <div class="services__container container grid">
+                    <div class="services__card">
+                        <h3 class="services__title">Machine Learning Research Assistant</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Machine Learning Research <br> Assistant</h3>
+                                <p class="services__modal-description">Weimer Lab, UC Davis <br> October 2023 - June 2024
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Worked with Weimer Laboratory in University of California, Veterinary Medice.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Developing a Machine Learning Script to differentiate various genes within DNA samples, contributing to research in genetics and bioinformatics.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Responsible for managing data inventory and ensuring the integrity of computational resources for research projects.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Assisting with data acquisition, analysis, and documentation to support ongoing research efforts.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Collaborating with team members to review and optimize computational processes, enhancing efficiency and accuracy in data analysis.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Undergraduate Researcher</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Undergraduate Researcher</h3>
+                                <p class="services__modal-description">Professor Hyoyoung Jeong, , UC Davis <br> April 2023 - June 2024
+                                </p>
+                            
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Conducted extensive research on previous patents related to wearable jaundice devices, providing valuable insights into medical device development processes and their significance in the healthcare industry.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Conducted extensive research on previous patents related to wearable jaundice devices, providing valuable insights into medical device development processes and their significance in the healthcare industry.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Recognized the importance of non-invasive monitoring methods in enhancing patient comfort and enabling more effective and continuous monitoring of conditions such as jaundice, thereby improving overall patient care outcomes.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Leveraged research findings to inform project development strategies and contribute to the design and implementation of wearable bio-electronic devices for health monitoring applications.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Undergraduate Laboratory Assistant</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Undergraduate Laboratory Assistant</h3>
+                                <p class="services__modal-description"> College of Engineering, UC Davis <br>October 2023 – March 2023
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Worked as a Laboratory Assistant for ENG100 – Electronic Circuits and Systems
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Assisted students during lab sessions by providing guidance and answering questions related to electronic circuits and systems.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Proficient in debugging circuits constructed on breadboards, ensuring proper functionality and troubleshooting any issues encountered.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Skilled in debugging basic Raspberry Pi codes using Micro Python, enhancing students' understanding of programming concepts and applications in electronics.
+                                        </p>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Computer Science Tutor</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Computer Science Tutor</h3>
+                                <p class="services__modal-description">CS Tutoring, UC Davis <br> October 2023 – March 2023
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Provided tutoring services for ECS 32A (Introduction to Programming), ECS 170 (Introduction to AI), and ECS 171 (Introduction to Machine Learning) courses.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Conducted virtual tutoring sessions to assist students with understanding course materials and concepts.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Assisted students in debugging their code, troubleshooting errors, and clarifying programming concepts.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Demonstrated patience and effective communication skills to facilitate student learning and comprehension.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">Undergraduate Researcher</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">Undergraduate Researcher</h3>
+                                <p class="services__modal-description">Fellowship, UC Berkeley <br> October 2021 -May 2022
+                                </p>
+                            
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Collaborated remotely with a research lab at the University of California Berkeley through the Artificial Intelligence Institute for Food Systems (AIFS) at UC Davis to optimize code related to ray tracing and solar panels for improved performance.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Demonstrated proficiency in programming and problem-solving to enhance the efficiency of the codebase
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Selected as one of 16 students for the fellowship program, showcasing exceptional skills and dedication.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Presented findings and project outcomes to fellow students and mentors during the culmination of the fellowship program.
+                                        </p>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__card">
+                        <h3 class="services__title">L'Space NPWEE Academy</h3>
+                        <span class="services__button">
+                            See more<i class='bx bx-right-arrow-alt services__icon' ></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <i class='bx bx-x services__modal-close' ></i>
+                                <h3 class="services__modal-title">L'Space NPWEE Academy</h3>
+                                <p class="services__modal-description">NASA, <br> January 2023 – August 2023
+                                </p>
+                                <ul class="services__modal-list">
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Led the development of an advanced technical project proposal for the NASA Taxonomy TX04 Robotic Systems as part of the prestigious NASA L'Space program.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Leveraged engineering expertise to create a comprehensive project document, aligning with program objectives to promote innovation and research excellence.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            Demonstrated strong leadership skills in guiding project teams, fostering collaboration, and driving continuous improvement initiatives to enhance project outcomes and deliverables.
+                                        </p>
+                                    </li>
+    
+                                    <li class="services__modal-item">
+                                        <i class='bx bx-check services__modal-icon' ></i>
+                                        <p class="services__modal-info">
+                                            <a href="https://drive.google.com/file/d/1V_Ak1b-j9WaBV23AHNyYTOzG6hgrKOEH/view" target="_blank" class="contact__button">
+                                                Certificate of Completion <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                            </a>
+                                        </p>
+                                    </li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+               <span class="section__subtitle"></span> 
+               <h2 class="section__title">My Projects</h2>
+
+               <div class="work__filters">
+                    <span class="work__item active-work" data-filter="all">All</span>
+                    <span class="work__item" data-filter=".web">Web</span>
+                    <span class="work__item" data-filter=".movil">Machine Learning</span>
+                    <span class="work__item" data-filter=".design">Python</span>
+               </div>
+
+               <div class="work__container container grid">
+                    <div class="work__card mix web">
+                        <img src="assets/img/Screenshot 2024-07-27 at 4.28.31 AM.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Weather App</h3>
+
+                        <a href="https://github.com/lsverma0909/Weather-App" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix movil">
+                        <img src="assets/img/images.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Vehicle Image Classification</h3>
+
+                        <a href="https://github.com/lsverma0909/Vehicle-Image-Classification" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix design">
+                        <img src="assets/img/images2.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Pong</h3>
+
+                        <a href="https://github.com/lsverma0909/Python-Mini-Game-Projects/tree/main/Pong" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix movil">
+                        <img src="assets/img/brain-computer-interface.png" alt="" class="work__img">
+
+                        <h3 class="work__title">Brain Machine Interface</h3>
+
+                        <a href="https://github.com/lsverma0909/Brain-Machine-Interface-Machine-Learning" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+                    <div class="work__card mix movil">
+                        <img src="assets/img/images3.jpeg" alt="" class="work__img">
+
+                        <h3 class="work__title">Song Popularity</h3>
+
+                        <a href="https://github.com/lsverma0909/Song-Popularity-Machine-Learning" class="work__button">
+                            Demo <i class='bx bx-right-arrow-alt work__icon' ></i>
+                        </a>
+                    </div>
+               </div>
+            </section>
+
+            <!--=============== TESTIMONIALS ===============-->
+            <section class="testimonial section" id="certification">
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">My Certifications</h2>
+
+                <div class="testimonial__container container swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/Screenshot 2024-07-26 at 5.45.38 PM.png" alt="" class="testimonial__img">
+                            <p class="testimonial__description">
+                                Unsupervised Learning, Recommenders, Reinforcement Learning <br> Stanford University
+                                <a href="https://www.coursera.org/account/accomplishments/verify/82SFNFDT8U9C?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="contact__button">
+                                    Certificate Link <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/Screenshot 2024-07-27 at 3.42.38 AM.png" alt="" class="testimonial__img">
+                            <p class="testimonial__description">
+                                Advanced Learning Algorithms <br> Stanford University
+                                <a href="https://www.coursera.org/account/accomplishments/verify/EM26GB6YY932?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="contact__button">
+                                    Certificate Link <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/Screenshot 2024-07-27 at 3.49.47 AM.png" alt="" class="testimonial__img">
+                            <p class="testimonial__description">
+                                SQL for Data Science <br> UC Davis
+                                <a href="https://coursera.org/share/bfeedad5e5c73a7ba168672ab984fdab" target="_blank" class="contact__button">
+                                    Certificate Link <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/Screenshot 2024-07-27 at 3.42.19 AM.png" alt="" class="testimonial__img">
+                            <p class="testimonial__description">
+                                Supervised Machine Learning: Regression and Classification <br> Stanford University
+                                <a href="https://www.coursera.org/account/accomplishments/verify/737UDEQSR2PB?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank" class="contact__button">
+                                    Certificate Link <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/Screenshot 2024-07-27 at 3.41.54 AM.png" alt="" class="testimonial__img">
+                            <p class="testimonial__description">
+                                Create a Virtual Machine and Deploy a Web Server <br> Azure
+                                <a href="https://www.coursera.org/account/accomplishments/verify/TC8JXPGASMLE?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=project" target="_blank" class="contact__button">
+                                    Certificate Link <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--=============== CONTACT ===============-->
+            <section class="contact section" id="contact">
+                <span class="section__subtitle"></span>
+                <h2 class="section__title">Contact Me</h2>
+
+                <div class="contact__container container grid">
+                    <div class="contact__content">
+                        <h3 class="contact__title">Socials</h3>
+                        <div class="contact__info">
+
+                            <div class="contact__card">
+                                <i class='bx bx-mail-send contact__card-icon' ></i>
+                                <h3 class="contact__card-title">Email</h3>
+                                <span class="contact__card-data">vermalisa348@gmail.com</span>
+
+                                <a href="mailto: vermalisa348@gmail.com" target="_blank" class="contact__button">
+                                    Email me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bx-phone contact__card-icon'></i>
+                                <h3 class="contact__card-title">Phone</h3>
+                                <span class="contact__card-data">+1 530-650-5851</span>
+
+                                <a href="tel:+15306505851" target="_blank" class="contact__button">
+                                    Message me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+
+                            <div class="contact__card">
+                                <i class='bx bxl-linkedin-square contact__card-icon'></i>
+                                <h3 class="contact__card-title">Linkedin</h3>
+                                <a href="https://www.linkedin.com/in/lisa-verma-454863215/" target="_blank" class="contact__button">
+                                    Connect with me <i class='bx bx-right-arrow-alt contact__button-icon' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <h3 class="contact__title">Collaboration</h3>
+                        
+                        <form action="" class="contact__form">
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Name</label>
+                                <input type="text" placeholder="Lisa Verma" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div">
+                                <label for="" class="contact__form-tag">Mail</label>
+                                <input type="email" placeholder="abc@gmail.com" class="contact__form-input">
+                            </div>
+
+                            <div class="contact__form-div contact__form-area">
+                                <label for="" class="contact__form-tag">Project</label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="Write about your project..." class="contact__form-input"></textarea>
+                            </div>
+
+                            <button class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div> 
+            </section>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Lisa</h1>
+
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/lisa-verma-454863215/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                    <a href="https://github.com/lsverma0909" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+                    <a href="mailto: vermalisa348@gmail.com" target="_blank" class="footer__social-link">
+                        <i class='bx bxs-envelope'></i>  
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    All rights reserverd
+                </span>
+            </div>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MIXITUP FILTER ===============-->
+        <script src="assets/js/mixitup.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
